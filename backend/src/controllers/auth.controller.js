@@ -101,7 +101,6 @@ async function loginUser(req,res) {
 }
 
 async function getMe(req,res) {
-    console.log("GET ME CONTROLLER HIT");
     const user = await userModel.findById(req.user.id)
     res.status(200).json({
         message: "User fetched successfully",
