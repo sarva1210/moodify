@@ -4,7 +4,6 @@ import { SongContext } from "../song.context";
 
 export const useSong = () => {
     const context = useContext(SongContext)
-
     const { loading, setLoading, song, setSong } = context
 
     async function handleGetSong({ mood }) {
