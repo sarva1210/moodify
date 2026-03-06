@@ -104,21 +104,11 @@ const Player = () => {
 
     return (
         <div className="player">
-            <audio
-                ref={audioRef}
-                src={song.url}
-                onTimeUpdate={handleTimeUpdate}
-                onLoadedMetadata={handleLoadedMetadata}
-                onEnded={handleSongEnd}
-            />
+            <audio ref={audioRef} src={song.url} onTimeUpdate={handleTimeUpdate} onLoadedMetadata={handleLoadedMetadata} onEnded={handleSongEnd}/>
 
             {/* Poster + Info */}
             <div className="player__info">
-                <img
-                    className="player__poster"
-                    src={song.posterUrl}
-                    alt={song.title}
-                />
+                <img className="player__poster" src={song.posterUrl} alt={song.title}/>
                 <div className="player__meta">
                     <p className="player__title">{song.title}</p>
                     <span className="player__mood">{song.mood}</span>
@@ -128,11 +118,7 @@ const Player = () => {
             {/* Progress bar */}
             <div className="player__progress-wrap">
                 <span className="player__time">{formatTime(currentTime)}</span>
-                <div
-                    className="player__progress"
-                    ref={progressRef}
-                    onClick={handleProgressClick}
-                >
+                <div className="player__progress" ref={progressRef} onClick={handleProgressClick}>
                     <div className="player__progress-fill" style={{ width: `${progress}%` }} />
                     <div className="player__progress-thumb" style={{ left: `${progress}%` }} />
                 </div>
