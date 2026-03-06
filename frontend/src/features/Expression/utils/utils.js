@@ -3,7 +3,6 @@ import {
     FilesetResolver
 } from "@mediapipe/tasks-vision";
 
-
 export const init = async ({ landmarkerRef, videoRef, streamRef }) => {
     const vision = await FilesetResolver.forVisionTasks(
         "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm"
