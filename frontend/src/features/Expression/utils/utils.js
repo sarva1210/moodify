@@ -12,8 +12,7 @@ export const init = async ({ landmarkerRef, videoRef, streamRef }) => {
         vision,
         {
             baseOptions: {
-                modelAssetPath:
-                    "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task"
+                modelAssetPath: "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task"
             },
             outputFaceBlendshapes: true,
             runningMode: "VIDEO",
