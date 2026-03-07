@@ -201,11 +201,7 @@ const Player = () => {
                         type="range"
                         min="0"
                         max="1"
-                        step="0.05"
-                        value={isMuted ? 0 : volume}
-                        onChange={handleVolume}
-                        className="player__volume-slider"
-                    />
+                        step="0.05" value={isMuted ? 0 : volume} onChange={handleVolume} className="player__volume-slider"/>
                 </div>
             </div>
         </div>
