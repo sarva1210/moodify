@@ -140,11 +140,9 @@ const Player = () => {
                     {showSpeed && (
                         <div className="player__speed-menu">
                             {SPEED_OPTIONS.map((s) => (
-                                <button
-                                    key={s}
+                                <button key={s}
                                     className={`player__speed-option ${s === speed ? 'active' : ''}`}
-                                    onClick={() => handleSpeedChange(s)}
-                                >
+                                    onClick={() => handleSpeedChange(s)}>
                                     {s}×
                                 </button>
                             ))}
@@ -197,8 +195,7 @@ const Player = () => {
                             </svg>
                         )}
                     </button>
-                    <input
-                        type="range" min="0" max="1" step="0.05" value={isMuted ? 0 : volume} onChange={handleVolume} className="player__volume-slider"/>
+                    <input type="range" min="0" max="1" step="0.05" value={isMuted ? 0 : volume} onChange={handleVolume} className="player__volume-slider"/>
                 </div>
             </div>
         </div>
