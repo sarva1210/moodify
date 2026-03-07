@@ -130,11 +130,9 @@ const Player = () => {
 
                 {/* Speed picker */}
                 <div className="player__speed-wrap">
-                    <button
-                        className="player__btn player__btn--speed"
+                    <button className="player__btn player__btn--speed"
                         onClick={() => setShowSpeed(!showSpeed)}
-                        title="Playback speed"
-                    >
+                        title="Playback speed">
                         {speed}×
                     </button>
                     {showSpeed && (
