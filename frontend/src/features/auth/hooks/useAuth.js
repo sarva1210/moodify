@@ -23,7 +23,7 @@ export const useAuth = () => {
         setLoading(false)
     }
 
-    
+
     async function handleGetMe() {
         setLoading(true)
         const data = await getMe()
@@ -31,6 +31,7 @@ export const useAuth = () => {
         setLoading(false)
     }
 
+    
     async function handleLogout() {
         setLoading(true)
         const data = await logout()
